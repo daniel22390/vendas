@@ -1,0 +1,96 @@
+body{
+    background-color: #eeeeee;
+    font-family: Poppins,sans-serif;
+}
+
+.container{
+  padding: 10px;
+}
+
+body .side > i{
+  cursor: pointer;
+}
+
+.side{
+  height: calc(100vh - 20px);
+  position: fixed;
+}
+
+header{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.sidenav.toggle-class:hover, .sidenav.notoggle-class{
+  width: 180px;
+}
+
+.body-application{
+  padding-left: 70px;
+  position: absolute;
+}
+
+.sidenav{
+  width: 60px;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: calc(100vh - 80px);
+  background: #27293d;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;  
+  transition: width .2s;
+  -webkit-transition: width .2s; /* For Safari 3.1 to 6.0 */
+}
+
+.sidenav.toggle-class:hover, .sidenav.notoggle-class{
+  text-align: initial;
+}
+
+.sidenav.toggle-class:hover li, .sidenav.notoggle-class li{
+  text-align: initial;
+  display: block;
+}
+
+.sidenav li{
+  list-style-type: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #fff !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.side li span{
+  display: none;
+}
+
+.sidenav.toggle-class:hover li span, .sidenav.notoggle-class li span{
+  display: initial;
+  position: absolute;
+  left: 55px;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .container{
+    max-width: calc(100% - 30px);
+  }
+}
